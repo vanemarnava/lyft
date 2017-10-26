@@ -1,3 +1,323 @@
 /*
  * Estilos de tu proyecto
+
+Botones, hover: #FF00BF;
+Fondo de footer: #333447;
+Título del formulario: #352384;
+Texto del formulario: #728099; 
+Gradiente morado: linear-gradient(#76278F, #2B1E66);
+
  */
+
+body 
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #76278F;
+	background-image: url(../assets/images/hero.gif);/*lugar en donde esta contenida la imagen*/
+	background-repeat: no-repeat; /*no se mostrara imagenes en mosaico*/
+	background-size: cover; /*la imagen se estirara para cubrir lo necesario*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+header
+{
+  width: 100%;
+  /*position: fixed;*/
+  top: 0;
+  padding: 20px 0;
+  /*background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.01) 93%, rgba(255,255,255,0) 100%); *//* FF3.6-15 */
+  /*background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.01) 93%,rgba(255,255,255,0) 100%);  Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.01) 93%,rgba(255,255,255,0) 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00ffffff',GradientType=0 );*/ /* IE6-9 */
+}
+
+/*todos los elementos dentro de las etiquetas 'a' seran 
+de color blanco*/
+header a
+{      
+    color:white;
+}
+
+/*cambian de color al pasar por ellos*/
+header a:hover 
+{   
+    color:  #FF00BF;
+}
+
+a
+{
+    text-decoration: none; 
+}
+
+nav
+{
+   padding-right: 200px; 
+   float: right;
+/*   position: fixed;*/
+}
+
+ul
+{
+  list-style: none;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+li
+{
+   margin: 30px;
+   margin-top: 15px;
+   display: inline-block;
+}
+
+li:last-child
+{
+	padding: 10px 20px;
+    border: 1px solid white; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+
+/*Estructura header*/
+.logo
+{
+	width: 65px;
+	height: 45px;
+	margin-left: 30px;
+    padding: 5px 2%;
+    margin-top: 10px;
+/*    position: fixed;*/
+    outline: 3px*/ solid green;
+}
+
+.boton
+{
+	display: inline-block;
+}
+
+
+.formulario
+{
+	background-color: white;
+	height: 420px;
+	width: 42%;
+	float: right;
+	margin-left: 300px;
+}
+
+h1
+{
+  font-weight: 500;
+  font-size: 38px;
+  margin: 10px 0 ;
+  padding-left: 60px;
+  padding-top: 60px;
+  color: #352384;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.formulario .colored
+{
+	text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #352384;
+}
+
+input
+{ 
+    width: 420px;
+    border: none;
+    margin-left: 60px;
+    border-bottom: 1px solid #352384;
+    font-size: 16px;
+    margin-top: 7px;
+    color: #b2b2b2;
+}
+
+button
+{ 
+    padding: 15px 20px;
+    margin-top: 10px;
+	margin-left: 60px;
+    background-color: #FF00BF;
+    border: none;
+    font-size:15px;
+    color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.formulario a,p
+{
+	display: inline-block;
+}
+
+.formulario p
+{
+	font-weight: 300;
+  	font-size: 10px;
+  	margin-top: 10px;
+	margin-left: 60px;
+  	color: grey;
+}
+
+.other
+{
+	/*font-weight: 300;*/
+  	font-size: 10px;
+  	/*margin-top: 10px;*/
+	margin-left: 0px;
+  	color: #FF00BF;
+}
+
+.subrayado
+{
+	color:#728099;
+	margin-left: 20px;
+}
+
+
+.seccion2
+{
+	background: linear-gradient(#76278F, #2B1E66);
+	color: #ffffff;
+	margin-top: 500px;
+	position: absolute;
+	width: 100%;
+	outline: 1px solid red;
+	height: 550px;
+	padding-bottom: 0px;
+}
+
+.seccion2 .two-column 
+{
+  /*padding: 1em;*/
+  /*-moz-column-count: 2;
+  -moz-column-gap: 2em;
+  -webkit-column-count: 2;*//*cantidad de columnas*/
+  /*-webkit-column-gap: 1em;*/
+  column-count: 2;
+  column-gap: 1em; /*espacio entre columnas*/
+  color: white;
+  /*line-height: 30px;*/
+  /*text-align: left;*/
+  /*margin: 2% 20%;*/
+  padding-left: 150px;
+  padding-bottom: none;
+  padding-top: 20px;
+  padding-right: 130px;
+  position: absolute;
+  outline: 1px solid green;
+}
+
+
+
+/*.seccion2 .phone
+{
+	display: inline-block;
+	padding-top: 70px;
+	padding-left: 150px;
+	position: absolute;
+	margin-right: 100px;
+}*/
+
+.phone
+{
+	/*height: 500px;*/
+	width: 30%; /*tamano imagen*/
+	/*display: block;*/ /*en las columnas solo elementos de bloque*/
+	/*position: absolute;*/
+	
+
+	/*margin-left: 50px;*/
+	/*float: right*/;
+	padding: 30px;
+	display: inline; 
+	outline: 3px solid blue;/*ayuda visual*/
+}
+
+
+/************** VIDEO 1 *******************/
+.seccion3
+{
+	width: 100%;
+	position: absolute;
+	margin-top: 982px;
+	display: inline-block;
+	background-color: white;
+}
+
+.part1
+{
+	width: 300px;
+	display: inline-block;
+	background-color: white;
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.video1
+{
+	float: right;
+}
+
+/************** VIDEO 2 ********************/
+.seccion4
+{
+	width: 100%;
+	position: absolute;
+	margin-top: 1432px;
+	display: inline-block;
+	border: 1px solid red;
+}
+
+.part2
+{
+	width: 300px;
+	display: inline-block;
+	background-color: white;
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.video2
+{
+	float: left;
+}
+
+/**************** VIDEO 3 ******************/
+.seccion5
+{
+	width: 100%;
+	position: absolute;
+	margin-top: 1904px;
+	display: inline-block;
+	background-color: white;
+}
+
+.part3
+{
+	width: 300px;
+	display: inline-block;
+	background-color: white;
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.video4
+{
+	float: right;
+}
+
+
+
+
+
