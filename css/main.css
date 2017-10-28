@@ -13,11 +13,12 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background-color: #76278F;
-	background-image: url(../assets/images/hero.gif);/*lugar en donde esta contenida la imagen*/
-	background-repeat: no-repeat; /*no se mostrara imagenes en mosaico*/
-	background-size: cover; /*la imagen se estirara para cubrir lo necesario*/
 	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+   	background-image:url("../assets/images/hero.gif"); /*lugar en donde esta contenida la imagen*/
+    background-size: 100% auto; /*puede ser cover*/
+    background-repeat: no-repeat;  /*no se mostrara la imagen de fondo en mosaico*/
+	background-position: 30% -4.2%;/*la imagen de fondo se movera hacia arriba y a la derecha para quedar ubicada como en la web original*/ 
 }
 
 
@@ -25,16 +26,11 @@ header
 {
   width: 100%;
   /*position: fixed;*/
-  top: 0;
-  padding: 20px 0;
-  /*background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.01) 93%, rgba(255,255,255,0) 100%); *//* FF3.6-15 */
-  /*background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.01) 93%,rgba(255,255,255,0) 100%);  Chrome10-25,Safari5.1-6 */
-  /*background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.01) 93%,rgba(255,255,255,0) 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00ffffff',GradientType=0 );*/ /* IE6-9 */
+ /* top: 0;*/
+  padding: 5px 0;
 }
 
-/*todos los elementos dentro de las etiquetas 'a' seran 
-de color blanco*/
+/*todos los elementos dentro de las etiquetas 'a' seran de color blanco*/
 header a
 {      
     color:white;
@@ -53,7 +49,7 @@ a
 
 nav
 {
-   padding-right: 200px; 
+   padding-right: 150px; 
    float: right;
 /*   position: fixed;*/
 }
@@ -67,22 +63,27 @@ ul
 
 li
 {
-   margin: 30px;
-   margin-top: 15px;
+   margin: 22px;
+   margin-top: 2px;
    display: inline-block;
 }
 
-li:last-child
+/*estilo del boton "Log in" que se encuentra en el menu*/
+.bot
 {
-	padding: 10px 20px;
-    border: 1px solid white; 
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 
+
+/**/
+/**/
 /*Estructura header*/
+/**/
 .logo
 {
 	width: 65px;
@@ -91,22 +92,17 @@ li:last-child
     padding: 5px 2%;
     margin-top: 10px;
 /*    position: fixed;*/
-    outline: 3px*/ solid green;
 }
 
-.boton
-{
-	display: inline-block;
-}
-
-
+/*Estilo de la caja del formulario*/
 .formulario
 {
 	background-color: white;
-	height: 420px;
+	height: 410px;
 	width: 42%;
 	float: right;
 	margin-left: 300px;
+	margin-top: 0px;
 }
 
 h1
@@ -140,7 +136,7 @@ input
     color: #b2b2b2;
 }
 
-button
+.boton2
 { 
     padding: 15px 20px;
     margin-top: 10px;
@@ -182,79 +178,63 @@ button
 {
 	color:#728099;
 	margin-left: 20px;
+	text-decoration: underline;
 }
 
+/**/
+/**/
+/*seccion 2 - CON FOTO TELEFONO*/
+h2
+{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
+}
 
+/*estilo general de la seccion*/
 .seccion2
 {
+	text-align: left;
 	background: linear-gradient(#76278F, #2B1E66);
 	color: #ffffff;
-	margin-top: 500px;
+	margin-top: 490px;
 	position: absolute;
 	width: 100%;
-	outline: 1px solid red;
-	height: 550px;
-	padding-bottom: 0px;
-}
-
-.seccion2 .two-column 
-{
-  /*padding: 1em;*/
-  /*-moz-column-count: 2;
-  -moz-column-gap: 2em;
-  -webkit-column-count: 2;*//*cantidad de columnas*/
-  /*-webkit-column-gap: 1em;*/
-  column-count: 2;
-  column-gap: 1em; /*espacio entre columnas*/
-  color: white;
-  /*line-height: 30px;*/
-  /*text-align: left;*/
-  /*margin: 2% 20%;*/
-  padding-left: 150px;
-  padding-bottom: none;
-  padding-top: 20px;
-  padding-right: 130px;
-  position: absolute;
-  outline: 1px solid green;
+	height: 600px;
 }
 
 
-
-/*.seccion2 .phone
+.seccion2 .two-parts
 {
 	display: inline-block;
-	padding-top: 70px;
-	padding-left: 150px;
-	position: absolute;
-	margin-right: 100px;
-}*/
-
-.phone
-{
-	/*height: 500px;*/
-	width: 30%; /*tamano imagen*/
-	/*display: block;*/ /*en las columnas solo elementos de bloque*/
-	/*position: absolute;*/
-	
-
-	/*margin-left: 50px;*/
-	/*float: right*/;
-	padding: 30px;
-	display: inline; 
-	outline: 3px solid blue;/*ayuda visual*/
+	padding-top: 15px;
+	padding-left: 30px;
+	margin-left: 113px;
 }
 
+/*imagen del telefono*/
+.phone 
+{
+	width: 38%;
+  	height: auto;
+  	padding-top: 10% 10%;
+  	margin-left: 100px;
+}
 
-/************** VIDEO 1 *******************/
+/**/
+/**/
+/*estilo de seccion 3*/
 .seccion3
 {
 	width: 100%;
 	position: absolute;
-	margin-top: 982px;
+	margin-top: 1090px;
 	display: inline-block;
 	background-color: white;
+/*	border: 3px solid yellow;*/
 }
 
+/*estilo del texto de la seccion*/
 .part1
 {
 	width: 300px;
@@ -264,21 +244,23 @@ button
 	padding-top: 30px;
 }
 
+/*video 1*/
 .video1
 {
 	float: right;
 }
 
-/************** VIDEO 2 ********************/
+/**/
+/**/
+/*Estilo seccion 4*/
 .seccion4
 {
 	width: 100%;
 	position: absolute;
-	margin-top: 1140px;
+	margin-top: 1568px;
 	display: inline-block;
-	border: 1px solid red;
 }
-
+ /*estilo del texto de la seccion*/
 .part2
 {
 	width: 300px;
@@ -288,21 +270,25 @@ button
 	padding-top: 30px;
 }
 
+/*video 2*/
 .video2
 {
 	float: left;
 }
 
-/**************** VIDEO 3 ******************/
+/**/
+/**/
+/*estilo de la seccion*/
 .seccion5
 {
 	width: 100%;
 	position: absolute;
-	margin-top: 1904px;
+	margin-top: 2046px;
 	display: inline-block;
 	background-color: white;
 }
 
+/*estilo del gtexto de la seccion*/
 .part3
 {
 	width: 300px;
@@ -312,12 +298,102 @@ button
 	padding-top: 30px;
 }
 
+/*video 3*/
 .video4
 {
 	float: right;
 }
 
+/**/
+/**/
+/*footer*/
+footer
+{ 
+	width: 1256px;
+	height: auto;
+	background-color: #333447;
+	padding-left: 30px;
+	margin-top: 2524px;
+}
 
+.foot
+{
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 40px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
 
+/*estilo de las etiquetas a en footer*/
+.foot a
+{
+	color: #fff;
+	display: list-item;
+	text-decoration: none;
+	margin-top: 30px; 
+	font-size: 15px;
+}
 
+/*cambia de color al pasar el cursor*/
+.foot a:hover
+{
+	color: #FF00BF;
+	border-bottom: 1px solid #FF00BF;
+	text-decoration: none;
+}
+
+.foot a h3
+{
+	margin: 0px;
+}
+
+/*estilo imagenes*/
+.fourth img
+{
+	width: 100%;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	display: list-item;
+	margin-top: 20px;
+}
+
+.fourth
+{
+	float: right;
+	margin: 0;
+	width: 130px;
+	padding-top: 50px;
+	padding-right: 250px;
+}
+
+footer .social
+{
+	text-align: center;
+	margin: 20px;
+}
+
+/*estilo de los iconos de las redes*/
+.social .redes
+{
+  color: white;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 7px;
+}
+
+/*barra*/
+.social hr
+{
+	border-bottom: 1px solid #fff;
+	width: 850px;
+}
+
+/*copyright*/
+.social .c
+{
+	margin-top: 40px;
+	color: white;
+}
 
