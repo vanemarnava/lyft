@@ -3,12 +3,11 @@
 * **Curso:** _Creando tu primer sitio web interactivo._
 * **Unidad:** _Maquetado web con HTML & CSS._
 * **Version:**_0.1.0.
+***
 
 ------------------***&&&&&&***------------------
 
 #Seccion Head:
-
-____________________________________________________
 
 En esta seccion se ingresan todos los links que se utilizaran a lo largo del codigo, asi como tambien el nombre de la pestana del sitio web.
 
