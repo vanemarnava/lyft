@@ -321,7 +321,7 @@ footer
 	display: inline-block;
 	list-style: none;
 	margin-bottom: 40px;
-	margin-left: 100px;
+	margin-left: 135px;
 	margin-top: 50px;
 }
 
@@ -339,7 +339,6 @@ footer
 .foot a:hover
 {
 	color: #FF00BF;
-	border-bottom: 1px solid #FF00BF;
 	text-decoration: none;
 }
 
@@ -374,13 +373,14 @@ footer .social
 }
 
 /*estilo de los iconos de las redes*/
-.social .redes
+.social .redes a 
 {
   color: white;
-  font-size: 16px;
+  font-size: 22px;
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 7px;
+  margin: 36px;
 }
 
 /*barra*/
@@ -388,6 +388,7 @@ footer .social
 {
 	border-bottom: 1px solid #fff;
 	width: 850px;
+	margin-top: 35px;
 }
 
 /*copyright*/
